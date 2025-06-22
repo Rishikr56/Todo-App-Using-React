@@ -20,6 +20,9 @@ function TodoForm({ tasklist, settaskList }) {
   }
 
   async function submitHandler(data) {
+    if(data.Task == ""){
+        return;
+    }
     let dataInO = { ...data, isCompleted: false, id: nanoid() };
     console.log(
       "function value printing",
