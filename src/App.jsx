@@ -33,9 +33,9 @@ function App() {
 
   return (
     <div className="gap-3 mx-10">
-      <div className="font-bold text-zinc-700 text-center text-2xl mb-5  ">
+      <div className="font-bold text-zinc-700 text-center text-2xl mb-5 rounded ">
         <span className="border-b border-gray-300 shadow px-3 py-1">Your To Do</span>
-      </div>
+      </div>    
       <div>
         <TodoForm tasklist={tasklist} settaskList={settaskList} />
       </div>
